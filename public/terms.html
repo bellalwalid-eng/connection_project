@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service — TikTok Connect</title>
+    <meta name="description" content="Terms of Service for TikTok Connect." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.55);
+            --pink: #ff2d55;
+            --cyan: #00f2ea;
+            --amber: #f59e0b;
+        }
+
+        html,
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            padding: 48px 20px 80px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 40px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .page-header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 32px;
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(0, 242, 234, 0.07);
+            border: 1px solid rgba(0, 242, 234, 0.2);
+            border-radius: 40px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--cyan);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.65) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .intro {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--cyan);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 48px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .section {
+            margin-bottom: 44px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: rgba(0, 242, 234, 0.08);
+            border: 1px solid rgba(0, 242, 234, 0.18);
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--cyan);
+            flex-shrink: 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--cyan);
+        }
+
+        .warning-box {
+            background: rgba(245, 158, 11, 0.06);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 12px;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: rgba(245, 200, 100, 0.85);
+        }
+
+        .contact-link {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .page-footer {
+            margin-top: 60px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        .page-footer a {
+            color: rgba(255, 255, 255, 0.35);
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .sep {
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <a href="/" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Back to Home
+        </a>
+
+        <header class="page-header">
+            <div class="badge">Legal</div>
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last updated: March 21, 2026</p>
+        </header>
+
+        <div class="intro">
+            These Terms of Service (“Terms”) govern your access to and use of hpi Solution’s website, software, integrations, and related services (collectively, the “Service”). By using the Service, you agree to these Terms and to our Privacy Policy.
+        </div>
+
+        <div class="section">
+            <h2><span class="num">1</span> The service</h2>
+            <p>hpi Solution provides software tools that allow users to connect a TikTok account through TikTok’s official authorization process and use approved automation features, including message-based workflows and automated replies, where enabled and permitted.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">2</span> Eligibility</h2>
+            <p>You may use the Service only if:</p>
+            <ul>
+                <li>you are at least 18 years old or the age of majority in your jurisdiction;</li>
+                <li>you have the legal authority to connect and control the TikTok account used with the Service;</li>
+                <li>you comply with all applicable laws, regulations, and platform rules.</li>
+            </ul>
+            <p>If you use the Service on behalf of a company or organization, you represent that you are authorized to bind that entity to these Terms.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">3</span> TikTok integration</h2>
+            <p>The Service relies on TikTok’s official APIs, scopes, and OAuth systems.</p>
+            <p>You acknowledge that:</p>
+            <ul>
+                <li>we do not receive your TikTok password;</li>
+                <li>access is granted through TikTok’s official authorization process;</li>
+                <li>available features depend on the scopes approved by TikTok and authorized by you;</li>
+                <li>TikTok may change, limit, suspend, or discontinue API access or related features at any time.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">4</span> User responsibilities</h2>
+            <p>You are responsible for all actions performed through your connected TikTok account using the Service, including automated actions you configure.</p>
+            <p>You agree not to use the Service to:</p>
+            <ul>
+                <li>violate TikTok’s terms, policies, or community rules;</li>
+                <li>send spam, unlawful, deceptive, abusive, or infringing content;</li>
+                <li>harass, threaten, or harm others;</li>
+                <li>interfere with, disrupt, or attempt unauthorized access to the Service or third-party systems;</li>
+                <li>use the Service for illegal or fraudulent purposes.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">5</span> Scope of authorization</h2>
+            <p>You authorize us to act only within the scopes approved for our app and consented to by you. If scope requirements change, additional authorization may be required.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">6</span> Fees and plans</h2>
+            <p>At present, unless otherwise stated on our website, the Service may be offered free of charge or under a separate commercial arrangement. If pricing is introduced or changed, the applicable terms will be displayed separately.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">7</span> Availability and changes</h2>
+            <p>We may modify, update, suspend, or discontinue all or part of the Service at any time. We do not guarantee uninterrupted availability. The Service may also be affected by TikTok API limits, outages, review decisions, policy changes, or feature restrictions outside our control.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">8</span> Suspension and termination</h2>
+            <p>We may suspend or terminate your access immediately if:</p>
+            <ul>
+                <li>you violate these Terms;</li>
+                <li>your use creates legal, security, or reputational risk;</li>
+                <li>we believe your activity is abusive, fraudulent, or harmful;</li>
+                <li>TikTok or a legal authority requires restriction;</li>
+                <li>continued service is no longer technically or legally possible.</li>
+            </ul>
+            <p>You may stop using the Service at any time and may request disconnection of your TikTok account.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">9</span> Data and privacy</h2>
+            <p>Our collection and use of data are described in the Privacy Policy. By using the Service, you acknowledge that certain data must be processed to operate the integration.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">10</span> Intellectual property</h2>
+            <p>The Service, including its software, branding, design, and content, is owned by hpi Solution or its licensors and is protected by applicable intellectual property laws. These Terms do not transfer any ownership rights to you.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">11</span> Disclaimer</h2>
+            <p>The Service is provided on an “as is” and “as available” basis, to the fullest extent permitted by law. We do not guarantee that the Service will always be available, error-free, secure, or suitable for your specific purpose.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">12</span> Limitation of liability</h2>
+            <p>To the maximum extent permitted by law, hpi Solution and its affiliates, officers, employees, and agents will not be liable for any indirect, incidental, consequential, special, exemplary, or punitive damages, or for loss of profits, revenue, goodwill, data, or business opportunities, arising out of or related to your use of the Service.</p>
+            <p>Our total liability for any claim relating to the Service will not exceed the amount you paid us, if any, during the three months preceding the event giving rise to the claim.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">13</span> Indemnification</h2>
+            <p>You agree to indemnify and hold harmless hpi Solution, its affiliates, personnel, and service providers from claims, losses, liabilities, and expenses arising from:</p>
+            <ul>
+                <li>your use or misuse of the Service;</li>
+                <li>your violation of these Terms;</li>
+                <li>your violation of law or third-party rights;</li>
+                <li>content, messages, or workflows sent through your connected account.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">14</span> Governing law</h2>
+            <p>These Terms are governed by the laws applicable in Algeria, unless mandatory law requires otherwise. Any disputes will be handled by the competent courts of Algeria, unless another forum is required by applicable consumer law.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">15</span> Changes to these terms</h2>
+            <p>We may revise these Terms from time to time. Continued use of the Service after updated Terms become effective constitutes acceptance of the revised Terms.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">16</span> Contact</h2>
+            <p>hpi Solution<br>Algeria<br>Email: <a href="mailto:contact.hpisolution@gmail.com" class="contact-link">contact.hpisolution@gmail.com</a></p>
+        </div>
+
+        <footer class="page-footer">
+            <span>TikTok Connect</span>
+            <div>
+                <a href="/privacy">Privacy Policy</a>
+                <span class="sep">·</span>
+                <a href="/terms">Terms of Service</a>
+                <span class="sep">·</span>
+                <a href="/">Home</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

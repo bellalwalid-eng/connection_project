@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — TikTok Connect</title>
+    <meta name="description" content="Privacy Policy for TikTok Connect." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.55);
+            --pink: #ff2d55;
+            --cyan: #00f2ea;
+            --radius: 20px;
+        }
+
+        html,
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            padding: 48px 20px 80px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* ── Back link ────────────────────────────────────── */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 40px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* ── Header ───────────────────────────────────────── */
+        .page-header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 32px;
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(255, 45, 85, 0.1);
+            border: 1px solid rgba(255, 45, 85, 0.25);
+            border-radius: 40px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--pink);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.65) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ── Intro ────────────────────────────────────────── */
+        .intro {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--cyan);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 48px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ── Sections ─────────────────────────────────────── */
+        .section {
+            margin-bottom: 44px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: rgba(255, 45, 85, 0.1);
+            border: 1px solid rgba(255, 45, 85, 0.2);
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--pink);
+            flex-shrink: 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--cyan);
+        }
+
+        .highlight-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 12px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        /* ── Contact ──────────────────────────────────────── */
+        .contact-link {
+            color: var(--pink);
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Footer ───────────────────────────────────────── */
+        .page-footer {
+            margin-top: 60px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: gap;
+            gap: 12px;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        .page-footer a {
+            color: rgba(255, 255, 255, 0.35);
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .sep {
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <a href="/" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Back to Home
+        </a>
+
+        <header class="page-header">
+            <div class="badge">Legal</div>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: March 21, 2026</p>
+        </header>
+
+        <div class="intro">
+            hpi Solution (“hpi Solution,” “we,” “our,” or “us”) provides tools that help users connect their TikTok account and automate selected actions they have configured, such as reading eligible incoming messages to trigger workflows and sending automated replies. This Privacy Policy explains what information we access, how we use it, how long we keep it, and what choices users have when they use our website, app, and related services.
+        </div>
+
+        <div class="section">
+            <h2><span class="num">1</span> Who this policy applies to</h2>
+            <p>This Privacy Policy applies to users of hpi Solution who connect a TikTok account to our service through TikTok’s official authorization flow.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">2</span> Information we collect and access</h2>
+            <p>When you connect your TikTok account through TikTok OAuth, we may access only the information and permissions that you authorize and that have been approved for our app.</p>
+            <p>Depending on the features you enable, this may include:</p>
+            <ul>
+                <li>Basic account information made available through authorized TikTok scopes, such as your TikTok display name, account identifiers provided to developers, and profile image.</li>
+                <li>Direct message data that is necessary to detect and process incoming messages for the automation features you enable.</li>
+                <li>Permission to send messages through your connected TikTok account when you enable automated replies.</li>
+                <li>Technical connection data, such as OAuth tokens, refresh tokens, log data, timestamps, IP-related security logs, and basic diagnostic information needed to operate, secure, and troubleshoot the service.</li>
+            </ul>
+            <p>We do not collect your TikTok password. Authentication is handled through TikTok’s official OAuth flow.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">3</span> How we use information</h2>
+            <p>We use the information above only to operate the features you request. This includes:</p>
+            <ul>
+                <li>connecting and maintaining your TikTok account integration;</li>
+                <li>identifying your connected TikTok account inside our dashboard;</li>
+                <li>reading eligible incoming message events to determine whether a workflow you configured should run;</li>
+                <li>sending automated replies that you configured or approved;</li>
+                <li>maintaining service security, preventing abuse, and diagnosing technical issues;</li>
+                <li>complying with legal obligations and enforcing our Terms of Service.</li>
+            </ul>
+            <p>We do not use TikTok user data for resale, profiling for unrelated advertising, or any purpose unrelated to the features you enabled.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">4</span> Legal basis for processing</h2>
+            <p>Where applicable under data protection law, we process personal data because:</p>
+            <ul>
+                <li>it is necessary to provide the service you requested;</li>
+                <li>you have authorized the connection through TikTok OAuth and chosen to enable certain features;</li>
+                <li>we have legitimate interests in securing, operating, and improving the service, provided those interests do not override your rights.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">5</span> Data minimization</h2>
+            <p>We aim to request only the scopes and data needed for the features we provide.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">6</span> Data retention</h2>
+            <p>We do not permanently store message content longer than needed to run the requested automation, provide troubleshooting, or comply with law.</p>
+            <p>In practice:</p>
+            <ul>
+                <li>message content is processed transiently and is not kept longer than necessary for workflow execution, except where temporary logs are required for debugging, security, or error handling;</li>
+                <li>connection credentials such as access tokens and refresh tokens may be stored in encrypted form for as long as your integration remains active, so the service can continue working;</li>
+                <li>security and audit logs may be retained for a limited period reasonably necessary for fraud prevention, abuse detection, and system integrity;</li>
+                <li>when you disconnect your TikTok account or request deletion, we delete or anonymize stored data within a reasonable period, unless retention is required by law.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">7</span> Data sharing</h2>
+            <p>We do not sell your personal data.</p>
+            <p>We may share limited data only with:</p>
+            <ul>
+                <li>TikTok, as necessary to use TikTok’s official APIs and authorization systems;</li>
+                <li>infrastructure and hosting providers that help us operate the service securely;</li>
+                <li>professional advisers or authorities when required by law, regulation, or legal process;</li>
+                <li>a successor entity if our business is reorganized, merged, sold, or transferred.</li>
+            </ul>
+            <p>Any service providers we use must process data only for service-related purposes and under appropriate confidentiality and security obligations.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">8</span> Security</h2>
+            <p>We use reasonable administrative, technical, and organizational measures to protect data, including encrypted transport, access controls, and restricted internal access. No method of transmission or storage is completely secure, but we work to reduce risk and respond appropriately to incidents.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">9</span> Your choices and rights</h2>
+            <p>You may:</p>
+            <ul>
+                <li>revoke TikTok authorization through your TikTok account settings, where available;</li>
+                <li>disconnect your TikTok account from hpi Solution;</li>
+                <li>request access to, correction of, or deletion of personal data we hold about you;</li>
+                <li>object to or request restriction of certain processing where applicable law gives you that right.</li>
+            </ul>
+            <p>To submit a privacy or deletion request, contact us at <a href="mailto:contact.hpisolution@gmail.com" class="contact-link">contact.hpisolution@gmail.com</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">10</span> International processing</h2>
+            <p>Our company is based in Algeria, and the services or providers we use may process data in other countries. Where required, we take reasonable steps to protect personal data during cross-border processing.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">11</span> Children</h2>
+            <p>Our service is not intended for children. You must be at least 18 years old, or the age of majority in your jurisdiction, to use hpi Solution.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">12</span> Third-party platforms</h2>
+            <p>Our service integrates with TikTok, but TikTok is a separate platform with its own terms and privacy practices. Your use of TikTok remains subject to TikTok’s own policies.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">13</span> Changes to this policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we do, we will post the revised version on this page and update the “Last updated” date.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="num">14</span> Contact</h2>
+            <p>hpi Solution<br>Algeria<br>Email: <a href="mailto:contact.hpisolution@gmail.com" class="contact-link">contact.hpisolution@gmail.com</a></p>
+        </div>
+
+        <footer class="page-footer">
+            <span>TikTok Connect</span>
+            <div>
+                <a href="/privacy">Privacy Policy</a>
+                <span class="sep">·</span>
+                <a href="/terms">Terms of Service</a>
+                <span class="sep">·</span>
+                <a href="/">Home</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
